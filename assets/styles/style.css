@@ -1,0 +1,32 @@
+:root {
+  --bodyBackground: #fcfbff;
+  --brand-clr: #ff7901;
+  --clr-white: #ffffff;
+  --clr-black: #000000;
+  --clr-text-primary: #26262E;
+  --clr-text-secondary: #7D7D7E;
+  --clr-text-gray: #BDBDBD;
+
+  --dlt-btn-bg: #F2F2F4;
+  --dlt-btn-bg-hover: #FFD7D7;
+  --dlt-btn-inner-hover: #FF4242;
+
+  --logout-btn-bg:  rgba(255, 1, 1, 0.1);;
+  --logout-btn-inner: #FF5E5E;
+
+  --font-20: 20px;
+  --font-16: 16px;
+  --font-14: 14px;
+  --font-12: 12px;
+
+}
+img {
+  fill: #ff7901;
+}
+svg {
+  height: 150px !important;
+  width: 150px !important; 
+}
+ svg path:first-child{
+    fill: #ff7901;
+ }

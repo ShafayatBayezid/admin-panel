@@ -78,20 +78,19 @@ custom scrollbar
 }
 
 /* Track */
-::-webkit-scrollbar-track { 
+::-webkit-scrollbar-track {
   border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: transparent !important; 
+  background: transparent !important;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: transparent;
 }
-
 
 /* responsive navigation toggle button  */
 .tgl-btn {
@@ -100,6 +99,9 @@ custom scrollbar
   z-index: 9999;
   color: #ffffff;
   transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  height: 75px;
+  width: 45px;
 }
 .tgl-btn span::before,
 .tgl-btn span::after {
@@ -107,7 +109,7 @@ custom scrollbar
   content: "";
   width: 20px;
   height: 2px;
-  left: 20px;
+  left: 15px;
   top: 30px;
   background-color: var(--clr-white);
   transition: all 0.4s ease-in-out;
@@ -303,7 +305,7 @@ custom scrollbar
 @media only screen and (max-width: 767.9px) {
   .sidebar {
     opacity: 0;
-    left: -100px;
+    left: -225px;
     transition: all 0.4s ease-in-out;
   }
   .sidebar.mini {
@@ -311,7 +313,6 @@ custom scrollbar
     opacity: 1;
     left: 0;
   }
- 
 }
 
 /*  top navbar styles */

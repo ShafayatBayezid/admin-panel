@@ -10,12 +10,17 @@
     <link rel="stylesheet" href="assets/styles/style.css" />
   </head>
   <body>
+
+    <div class="tgl-btn">
+      <span></span>
+      
+    </div>
     <!-- left-sidebar -->
     <div class="sidebar">
       <div class="logo-details">
-        <a href="#">
+        <!-- <a href="#">
           <img class="logo-icon" src="assets/images/logo/icon.png" alt="icon" />
-        </a>
+        </a> -->
         <a href="#">
           <img class="logo-main" src="assets/images/logo/logo.png" alt="Logo" />
         </a>
@@ -378,6 +383,7 @@
 
     <!-- rest of the body area -->
     <main class="body-wrapper">
+      <!-- profile and credit card info -->
       <div class="profile-details">
         <div class="profile-card">
           <div class="img">
@@ -422,7 +428,7 @@
                 </svg>
               </div>
             </div>
-            <div class="credit-card">
+            <div class="credit-card active">
               <span class="card-name">Credit Card 2 (Default)</span>
               <span class="card-number">xxxxxxxxxxxx4242</span>
               <div class="delete-card">
@@ -480,6 +486,144 @@
                     fill="#BDBDBD"
                   />
                 </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- tab-panel area -->
+      <div class="profile-customization">
+        <div class="tabs-wrapper">
+          <ul class="nav-tabs">
+            <li><a href="#tab-1">Update Profile</a></li>
+            <li><a href="#tab-2">Change Password</a></li>
+            <li class="active"><a href="#tab-3">Email Notifications</a></li>
+            <li><a href="#tab-4">Auto Recharge Settings</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="tab-1" class="tab-pane">
+              <div class="tab-details">
+                <div class="radio-btn-area checked">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+                  <span class="tab-element-text">
+                    Notify me when list verification completes
+                  </span>
+                </div>
+                <div class="radio-btn-area">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+                  <span class="tab-element-text">
+                    Notify me when list export completes
+                  </span>
+                </div>
+                <div class="radio-btn-area checked">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+                  <span class="tab-element-text">
+                    Notify me when list verification result is about to expire
+                  </span>
+                </div>
+                <hr />
+                <div class="radio-btn-area checked">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+                  <span class="tab-element-text">
+                    Receive Low Credits Email
+                  </span>
+                  <div class="custom-email-box">
+                    <div>
+                      <label>Send Email to</label>
+                      <input type="email" placeholder="alexajui@gmail.com" />
+                    </div>
+
+                    <div>
+                      <label>When credits are less than</label>
+                      <input type="email" placeholder="50" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-2" class="tab-pane">
+              <div class="tab-details">
+                <h3>Feature 2</h3>
+                <p>
+                  Lorem ipsum dolor Feature 2 sit amet, consectetur adipisicing
+                  elit.
+                </p>
+              </div>
+            </div>
+            <div id="tab-3" class="tab-pane active">
+              <div class="tab-details">
+                <div class="radio-btn-area checked">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+                  <span class="tab-element-text">
+                    Notify me when list verification completes
+                  </span>
+                </div>
+                <div class="radio-btn-area">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+                  <span class="tab-element-text">
+                    Notify me when list export completes
+                  </span>
+                </div>
+                <div class="radio-btn-area checked">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+                  <span class="tab-element-text">
+                    Notify me when list verification result is about to expire
+                  </span>
+                </div>
+                <hr />
+                <div class="radio-btn-area checked">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                  </label>
+                  <span class="tab-element-text">
+                    Receive Low Credits Email
+                  </span>
+                  <div class="custom-email-box">
+                    <div>
+                      <label>Send Email to</label>
+                      <input type="email" placeholder="alexajui@gmail.com" />
+                    </div>
+
+                    <div>
+                      <label>When credits are less than</label>
+                      <input type="email" placeholder="50" />
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div style="margin: 10px 0 20px 0">
+                  <span class="save-btn">Save Change</span>
+                </div>
+              </div>
+            </div>
+            <div id="tab-4" class="tab-pane">
+              <div class="tab-details">
+                <h3>Feature 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               </div>
             </div>
           </div>

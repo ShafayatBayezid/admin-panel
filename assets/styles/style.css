@@ -446,17 +446,19 @@ h6 {
 
 /* profile-details styles */
 .profile-details {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "p c c c";
+  grid-gap: 30px;
 }
 .profile-details .profile-card {
   display: grid;
+  grid-area: p;
   text-align: center;
   background-color: var(--clr-white);
   border: 1px solid #f2f2f4;
   border-radius: 10px;
-  padding: 40px;
+  padding: 40px 10px;
 }
 
 .profile-details .profile-card .img img {
@@ -465,4 +467,150 @@ h6 {
 }
 .profile-details .profile-card span {
   display: block;
+}
+.profile-details .profile-card span.name {
+  color: var(--clr-text-primary);
+  font-size: var(--font-20);
+  font-weight: 500;
+  line-height: 38px;
+}
+
+.profile-details .profile-card span.email,
+.profile-details .profile-card span.phone,
+.profile-details .profile-card span.address {
+  color: var(--clr-text-secondary);
+  font-size: var(--font-12);
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.profile-details .credit-card-wrapper {
+  position: relative;
+  padding: 30px;
+  grid-area: c;
+  background: var(--clr-white);
+  border: 1px solid #f2f2f4;
+  border-radius: 10px;
+}
+
+.profile-details .credit-card-wrapper h2.credit-title {
+  color: var(--clr-text-primary);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.profile-details .credit-card-wrapper .card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.profile-details .credit-card-wrapper .card-list .credit-card {
+  position: relative;
+  background: var(--clr-white);
+  border: 1px solid #f2f2f4;
+  border-radius: 10px;
+  padding: 30px;
+  transition: all 0.4s ease-in-out;
+}
+.profile-details .credit-card-wrapper .card-list .credit-card .card-name {
+  display: block;
+  color: var(--clr-text-secondary);
+  font-size: var(--font-20);
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 30px;
+  transition: all 0.4s ease-in-out;
+}
+.profile-details .credit-card-wrapper .card-list .credit-card .card-number {
+  display: block;
+  color: var(--clr-text-gray);
+  font-size: var(--font-20);
+  font-weight: 500;
+  line-height: 32px;
+  transition: all 0.4s ease-in-out;
+}
+.profile-details .credit-card-wrapper .card-list .credit-card .delete-card {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  right: 10px;
+  top: 10px;
+  background-color: var(--dlt-btn-bg);
+  border-radius: 40px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.profile-details
+  .credit-card-wrapper
+  .card-list
+  .credit-card
+  .delete-card
+  svg
+  path {
+  fill: var(--clr-text-secondary);
+  transition: all 0.4s ease-in-out;
+}
+.profile-details .credit-card-wrapper .card-list .credit-card:hover {
+  border: 1px solid var(--brand-clr);
+}
+.profile-details .credit-card-wrapper .card-list .credit-card:hover .card-name,
+.profile-details
+  .credit-card-wrapper
+  .card-list
+  .credit-card:hover
+  .card-number {
+  color: var(--clr-text-primary);
+}
+.profile-details
+  .credit-card-wrapper
+  .card-list
+  .credit-card:hover
+  .delete-card {
+  background-color: var(--dlt-btn-bg-hover);
+}
+.profile-details
+  .credit-card-wrapper
+  .card-list
+  .credit-card:hover
+  .delete-card
+  svg
+  path {
+  fill: var(--dlt-btn-hover-inner);
+}
+/* profile details Responsive styles */
+@media only screen and (max-width: 1439.9px) {
+  .profile-details {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "p c c c c";
+    grid-gap: 30px;
+  }
+}
+@media only screen and (max-width: 1320.9px) {
+  .profile-details {
+    display: block;
+  }
+  .profile-details .profile-card {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 1099.9px) {
+  .profile-details .credit-card-wrapper .card-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 991.9px) {
+  .profile-details .credit-card-wrapper .card-list {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 767.9px) {
+  .profile-details .credit-card-wrapper .card-list {
+  }
 }

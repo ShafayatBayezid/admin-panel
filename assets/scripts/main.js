@@ -37,22 +37,20 @@ for (i = 0; i < tabLists.length; i++) {
   tabLists[i].addEventListener("click", onTabClick);
 }
 
-
 // sidebar hide / unhide
 var togg = document.querySelector(".tgl-btn");
 var sidebar = document.querySelector(".sidebar");
-togg.addEventListener('click', ()=>{
+togg.addEventListener("click", () => {
   sidebar.classList.toggle("mini");
   togg.classList.toggle("mini");
-})
+});
 
-// tab element is radio button active then highlight the text 
+// tab element is radio button active then highlight the text
 var radioSwitch = document.querySelectorAll(".slider");
 
 for (let i = 0; i < radioSwitch.length; i++) {
   radioSwitch[i].addEventListener("click", (e) => {
     let switchParent = e.target.parentElement.parentElement;
     switchParent.classList.toggle("checked");
-    console.log(switchParent)
   });
 }

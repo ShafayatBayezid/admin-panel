@@ -127,7 +127,7 @@ custom scrollbar
   top: 30px;
   background-color: var(--clr-white);
   transform: rotate(45deg);
-  transform-origin: 5%;
+  transform-origin: 13%;
 }
 .tgl-btn.mini span::after {
   top: 40px;

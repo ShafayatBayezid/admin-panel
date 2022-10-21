@@ -184,7 +184,9 @@ custom scrollbar
   width: 100%;
   transition: all 0.4s ease-in-out;
 }
-.sidebar .nav-links li:hover a {
+.sidebar .nav-links li:hover a,
+.sidebar .nav-links li.active a
+{
   border-right: 3px solid var(--brand-clr);
 }
 .sidebar .nav-links li svg {
@@ -198,6 +200,7 @@ custom scrollbar
   fill: var(--clr-text-secondary);
   transition: all 0.4s ease-in-out;
 }
+.sidebar .nav-links li.active > a svg path,
 .sidebar .nav-links li:hover > a svg path {
   fill: var(--brand-clr);
 }
@@ -209,9 +212,11 @@ custom scrollbar
   fill: var(--clr-text-secondary);
 }
 
+.sidebar .nav-links li.active a .buyC path,
 .sidebar .nav-links li:hover a .buyC path {
   fill: var(--clr-black);
 }
+.sidebar .nav-links li.active a .buyC path:first-child,
 .sidebar .nav-links li:hover a .buyC path:first-child {
   fill: var(--brand-clr);
 }
@@ -225,6 +230,7 @@ custom scrollbar
   opacity: 1;
 }
 
+.sidebar .nav-links li.active a .link-name,
 .sidebar .nav-links li:hover a .link-name {
   color: var(--clr-white);
 }

@@ -476,7 +476,6 @@ custom scrollbar
     font-size: var(--font-20);
   }
   .top-nav .content-wrapper .profile-wrapper {
-    padding: 15px 0;
     margin-right: 20px;
   }
   .top-nav .content-wrapper .profile-wrapper .profile {
@@ -497,7 +496,6 @@ custom scrollbar
 }
 @media only screen and (max-width: 455.9px) {
   .top-nav .content-wrapper .profile-wrapper {
-    padding: 15px 0;
     margin-right: 20px;
     width: 45px;
   }

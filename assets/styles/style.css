@@ -159,7 +159,7 @@ custom scrollbar
 
 .sidebar .logo-details {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .sidebar .logo-details .logo-main {
@@ -170,7 +170,7 @@ custom scrollbar
 .sidebar .nav-links {
   background-color: var(--clr-black);
   height: 100%;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .sidebar .nav-links li {
@@ -336,6 +336,7 @@ custom scrollbar
   display: flex;
   justify-content: end;
   align-items: center;
+  padding: 15px 0;
 }
 
 .top-nav .content-wrapper .balance {
@@ -354,7 +355,6 @@ custom scrollbar
 }
 .top-nav .content-wrapper .profile-wrapper {
   position: relative;
-  padding: 15px 0;
   width: 200px;
   margin-right: 30px;
   cursor: pointer;
@@ -397,7 +397,7 @@ custom scrollbar
   border: 1px solid var(--border-gray);
   box-shadow: 0px 30px 20px -20px rgba(198, 211, 232, 0.2);
   border-radius: 10px;
-  top: 40px;
+  top: 25px;
   right: 0;
   z-index: 5;
   display: none;
@@ -762,7 +762,7 @@ custom scrollbar
 }
 .tabs-wrapper .nav-tabs > li > a {
   padding: 10px;
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
   color: var(--clr-text-primary);
   font-size: var(--font-16);
   font-weight: 500;
@@ -771,7 +771,7 @@ custom scrollbar
   text-align: center;
 }
 .tabs-wrapper .nav-tabs > li > a:hover {
-  border-bottom: 1px solid var(--brand-clr);
+  border-bottom: 2px solid var(--brand-clr);
   color: var(--brand-clr);
 }
 .tabs-wrapper .nav-tabs > li.active > a,

@@ -74,7 +74,7 @@ custom scrollbar
 =====================*/
 /* width */
 ::-webkit-scrollbar {
-  width: 0;
+  width: 0px;
 }
 
 /* Track */
@@ -84,12 +84,12 @@ custom scrollbar
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: transparent !important;
+  background: var(--brand-clr) !important;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: transparent;
+  background: var(--dlt-btn-hover-inner);
 }
 
 /* responsive navigation toggle button  */
@@ -185,8 +185,7 @@ custom scrollbar
   transition: all 0.4s ease-in-out;
 }
 .sidebar .nav-links li:hover a,
-.sidebar .nav-links li.active a
-{
+.sidebar .nav-links li.active a {
   border-right: 3px solid var(--brand-clr);
 }
 .sidebar .nav-links li svg {
@@ -446,6 +445,23 @@ custom scrollbar
 }
 
 /* top-nav Responsive styles */
+@media only screen and (max-width: 992px) {
+  .top-nav .content-wrapper .profile-wrapper .nav-drop-menu {
+    display: none;
+    opacity: 1;
+  }
+
+  .top-nav .content-wrapper .profile-wrapper.show .nav-drop-menu,
+  .top-nav .content-wrapper .profile-wrapper:hover .nav-drop-menu {
+    display: none;
+    opacity: 1;
+  }
+
+  .clicked {
+    display: block !important;
+  }
+}
+
 @media only screen and (max-width: 767.9px) {
   .top-nav .content-wrapper .balance {
     font-size: var(--font-16);
@@ -941,9 +957,8 @@ custom scrollbar
   font-weight: 500;
   line-height: 28px;
   padding: 10px 16px;
-  width: 118px;
-  height: 28px;
-  margin-bottom: 20px;
+  border: none;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 1440px) {
